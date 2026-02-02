@@ -16,7 +16,7 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path , include
 from .views import name , contact , email , home
 
 urlpatterns = [
@@ -25,4 +25,11 @@ urlpatterns = [
     path("name/", name, name="name"),
     path("contact/", contact, name="contact"),
     path("email/", email, name="email"),
+    
+    path('karthik/', include('app1.urls')),
+    path('karthik/', include('app2.urls')),
+    path('karthik/', include('app3.urls')),
+    path('karthik/', include('app4.urls')),
+    path('karthik/', include('app5.urls')),
+
 ]
