@@ -1,6 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
+def index(request):
+ return render(request, 'index.html')
 
-def app1(request):
-    return HttpResponse("This Is App1 Web Page")
+def about(request):
+ return render(request,'about.html')
+
+def contact(request):
+ return render(request,"contact.html")
+
+def projects(request):
+ return render(request,"projects.html")
