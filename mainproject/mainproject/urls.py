@@ -28,5 +28,6 @@ urlpatterns = [
     # path("email/", email, name="email"),
     
     path('rajan/', include('app1.urls')),
+    path('web/', include('app2.urls')),
 
 ]
